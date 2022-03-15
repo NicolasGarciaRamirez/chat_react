@@ -5,6 +5,7 @@ const server = http.createServer(app);
 
 const socketio = require('socket.io');
 const io = socketio(server);
+
 //se inicializa la coneccion de soket
 io.on('connection', socket => {
     console.log('server ready')
@@ -25,4 +26,4 @@ io.on('connection', socket => {
     }) 
 });
 
-server.listen(3000, () => console.log("server init"));
+// server.listen(3000, () => console.log("server init"));
